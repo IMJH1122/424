@@ -1,0 +1,22 @@
+
+let xArr = [20, 40, 84, 100, 128, 172, 184, 240, 300, 350, 380]
+let yArr = [183, 54, 317, 102, 289, 76, 205, 398, 142, 331]
+
+function setup() {
+    createCanvas(400, 400);
+}
+
+function draw(){
+    background(50);
+    fill(255);
+
+    for (let i = 0; i < yArr.length; i++) {
+        yArr[i] += 1 
+        if (yArr[i] >= 400){
+            yArr[i] -= 400
+        }
+
+        circle(xArr[i], yArr[i], 40);
+    }
+    
+}
